@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment Options</title>
+    <style>
+        .payment-button {
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Select Payment Method</h2>
+    <button class="payment-button" onclick="showQRCod('esewa')">eSewa</button>
+    <button class="payment-button" onclick="showqrcode('khalti')">Khalti</button>
+    <button class="payment-button" onclick="showQRCode('imepay')">IME Pay</button>
+    <button class="payment-button" onclick="bankQRCodE()">Bank</button>
+
+    <div id="payment-details" style="margin-top: 20px;"></div>
+
+    <script>
+        function showQRCod() {
+            document.getElementById('payment-details').innerHTML = `<img src="eSewa_My_QR_9742455069_1745157974766_2025-04-20_19_51_15.jpg" alt="QR Code" width="200">
+                                                                 <p>Scan this QR code using your preferred mobile banking app.</p>
+                                                               `;
+            // For a dynamic QR code, your server would generate the QR code.
+        }
+        
+        function showqrCode() {
+            document.getElementById('payment-details').innerHTML = `<img src="" alt="QR Code" width="200">
+                                                                 <p>Scan this QR code using your preferred mobile banking app.</p>
+                                                               `;
+            // For a dynamic QR code, your server would generate the QR code.
+        }
+        function showQRCodE() {
+    document.getElementById('payment-details').innerHTML = `<img src="" alt="QR Code" width="200">
+                                                                 <p>Scan this QR code using your preferred mobile banking app.</p>
+                                                               `;
+    // For a dynamic QR code, your server would generate the QR code.
+}
+function bankQRCode() {
+    document.getElementById('payment-details').innerHTML = `<img src="IMG_20250503_213123.jpg" alt="QR Code" width="200">
+                                                                 <p>Scan this QR code using your preferred mobile banking app.</p>
+                                                               `;
+    // For a dynamic QR code, your server would generate the QR code.
+}
+    </script>
+</body>
+</html>
+

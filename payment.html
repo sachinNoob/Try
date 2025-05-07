@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+  body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+        .payment-option {
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  }
+  
+  .payment-option:hover {
+      background-color: #f9f9f9;
+  }
+  
+  .payment-option input[type="radio"] {
+      margin-right: 15px;
+  }
+  
+  .payment-option label {
+      flex-grow: 1;
+      font-weight: bold;
+      color: #555;
+  }
+  
+  .payment-option img {
+      max-height: 30px;
+      margin-left: 10px;
+  }
+  .payment-methods {
+
+    margin-top: 20px;
+
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.payment-methods h2 {
+    color: #696901; /* Teal color for payment heading */
+    text-align: left;
+    margin-top: 0;
+}
+  
+  button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      display: block;
+      width: 100%;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+      background-color: #0056b3;
+  }
+  #popop img{
+      max-height: 30px;
+      margin-left: 10px;
+  }
+  </style>
+</head>
+
+<body>
+    <div class="payment-container">
+
+        <h2>Choose Your Payment Method</h2>
+
+        <div class="payment-option">
+            <input type="radio" id="esewa" name="payment" value="esewa">
+            <label for="esewa">Esewa</label>
+            <img src="esewa.jpg" alt="Esewa" width="50">
+        </div>
+        <div class="payment-option">
+            <input type="radio" id="khalti" name="payment" value="khalti">
+            <label for="khalti">Khalti</label>
+            <img src="khalti.jpg" alt="Khalti" height="30">
+        </div>
+        <div class="payment-option">
+            <input type="radio" id="imepay" name="payment" value="imepay">
+            <label for="imepay">IME Pay</label>
+            <img src="ime.jpg" alt="IME Pay" height="30">
+        </div>
+        <div class="payment-option">
+            <input type="radio" id="banktransfer" name="payment" value="banktransfer">
+            <label for="banktransfer">Bank Transfer</label>
+            <img src="bank.jpg" alt="Bank Transfer" height="30">
+        </div>
+       <a href="form.html"><button type="button">SUBMIT</button></a>
+       <div class="payment-methods">
+          <h2> Please pay first and submit.</h2>
+       </div>
+    </div>
+    <div id="popop">
+        <img src="IMG_20250503_213123.jpg" alt="" />
+    </div>
+</body>
+
+</html>
